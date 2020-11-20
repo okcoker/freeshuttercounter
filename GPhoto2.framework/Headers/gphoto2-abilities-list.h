@@ -1,1 +1,0 @@
-../prefix/include/gphoto2/gphoto2-abilities-list.h

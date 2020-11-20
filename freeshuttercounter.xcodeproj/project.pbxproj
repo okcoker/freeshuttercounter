@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C1592821C9EC97500AFEDF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1592811C9EC97500AFEDF3 /* AppDelegate.m */; };
+		147F47A325686D85003EDA94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F47A225686D85003EDA94 /* AppDelegate.swift */; };
+		147F47BA2568749D003EDA94 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F47B92568749D003EDA94 /* MainController.swift */; };
 		7C15928A1C9EC97500AFEDF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C1592891C9EC97500AFEDF3 /* Assets.xcassets */; };
-		7C1592BF1C9EF52E00AFEDF3 /* freeshuttercounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1592BE1C9EF52E00AFEDF3 /* freeshuttercounter.m */; };
 		7C6480431CA1541200A592D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6480421CA1541200A592D0 /* main.m */; };
 		7C860DB91D9C1F3D00862EE3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C860DB81D9C1F3D00862EE3 /* MainMenu.xib */; };
 		7CEF907A1E0D9C33003B1880 /* GPhoto2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CEF90741E0D9099003B1880 /* GPhoto2.framework */; };
@@ -48,14 +48,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		147F47A225686D85003EDA94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		147F47B92568749D003EDA94 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		147F47C52568774A003EDA94 /* freeshuttercounter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "freeshuttercounter-Bridging-Header.h"; path = "Supporting Files/freeshuttercounter-Bridging-Header.h"; sourceTree = "<group>"; };
 		7C15927D1C9EC97500AFEDF3 /* freeshuttercounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = freeshuttercounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C1592801C9EC97500AFEDF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7C1592811C9EC97500AFEDF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7C1592891C9EC97500AFEDF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C15928E1C9EC97500AFEDF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C1592931C9EC97600AFEDF3 /* freeshuttercounter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = freeshuttercounter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C15929E1C9EC97600AFEDF3 /* freeshuttercounter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = freeshuttercounter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C1592BE1C9EF52E00AFEDF3 /* freeshuttercounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = freeshuttercounter.m; sourceTree = "<group>"; };
 		7C1AE5381CA1681500B43077 /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
 		7C6480421CA1541200A592D0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C75CD141CA15EBD0006F109 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -89,13 +89,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		147F47A725686DD3003EDA94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CEF90741E0D9099003B1880 /* GPhoto2.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		147F47B225687272003EDA94 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7C860DB81D9C1F3D00862EE3 /* MainMenu.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		147F47BF256875F2003EDA94 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				147F47A225686D85003EDA94 /* AppDelegate.swift */,
+				147F47B92568749D003EDA94 /* MainController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		147F47C22568760C003EDA94 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C6480421CA1541200A592D0 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7C1592741C9EC97500AFEDF3 = {
 			isa = PBXGroup;
 			children = (
 				7C75CD141CA15EBD0006F109 /* README.md */,
 				7C1AE5381CA1681500B43077 /* COPYING */,
-				7CEF90741E0D9099003B1880 /* GPhoto2.framework */,
 				7C15927F1C9EC97500AFEDF3 /* freeshuttercounter */,
+				147F47A725686DD3003EDA94 /* Frameworks */,
 				7C15927E1C9EC97500AFEDF3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,13 +146,12 @@
 		7C15927F1C9EC97500AFEDF3 /* freeshuttercounter */ = {
 			isa = PBXGroup;
 			children = (
-				7C1592801C9EC97500AFEDF3 /* AppDelegate.h */,
-				7C1592811C9EC97500AFEDF3 /* AppDelegate.m */,
-				7C1592BE1C9EF52E00AFEDF3 /* freeshuttercounter.m */,
+				147F47BF256875F2003EDA94 /* Controllers */,
+				147F47B225687272003EDA94 /* UI */,
+				147F47C22568760C003EDA94 /* Supporting Files */,
 				7C1592891C9EC97500AFEDF3 /* Assets.xcassets */,
-				7C860DB81D9C1F3D00862EE3 /* MainMenu.xib */,
+				147F47C52568774A003EDA94 /* freeshuttercounter-Bridging-Header.h */,
 				7C15928E1C9EC97500AFEDF3 /* Info.plist */,
-				7C6480421CA1541200A592D0 /* main.m */,
 			);
 			path = freeshuttercounter;
 			sourceTree = "<group>";
@@ -188,11 +220,12 @@
 		7C1592751C9EC97500AFEDF3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Oleg Orlov";
 				TargetAttributes = {
 					7C15927C1C9EC97500AFEDF3 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 1220;
 					};
 					7C1592921C9EC97600AFEDF3 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -206,7 +239,7 @@
 			};
 			buildConfigurationList = 7C1592781C9EC97500AFEDF3 /* Build configuration list for PBXProject "freeshuttercounter" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -262,7 +295,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n\nPREFIX=/Applications/freeshuttercounter.app/Contents/Frameworks\n\nFILES=\"$BUILT_PRODUCTS_DIR/freeshuttercounter.app/Contents/Frameworks/GPhoto2.framework/prefix/lib/*.dylib\"\n                                                                                                      \nfor n in $FILES\ndo\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libgphoto2.6.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libgphoto2.6.dylib\" $n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libgphoto2_port.12.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libgphoto2_port.12.dylib\" $n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libjpeg.62.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libjpeg.62.dylib\" $n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libltdl.7.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libltdl.7.dylib\" $n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libturbojpeg.0.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libturbojpeg.0.dylib\" $n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libusb-1.0.0.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libusb-1.0.0.dylib\" $n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libusb-0.1.4.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libusb-0.1.4.dylib\" $n\ninstall_name_tool -id \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/`basename $n`\" $n\ndone\n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libgphoto2.6.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libgphoto2.6.dylib\" \"$BUILT_PRODUCTS_DIR/freeshuttercounter.app/Contents/MacOS/freeshuttercounter\"";
+			shellScript = "#!/bin/bash\n\nPREFIX=/Applications/freeshuttercounter.app/Contents/Frameworks\n\nFILES=\"$BUILT_PRODUCTS_DIR/freeshuttercounter.app/Contents/Frameworks/GPhoto2.framework/prefix/lib/*.dylib\"\n                                                                                                      \nfor n in $FILES\ndo\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libgphoto2.6.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libgphoto2.6.dylib\" $n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libgphoto2_port.12.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libgphoto2_port.12.dylib\" $n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libjpeg.62.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libjpeg.62.dylib\" $n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libltdl.7.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libltdl.7.dylib\" $n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libturbojpeg.0.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libturbojpeg.0.dylib\" $n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libusb-1.0.0.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libusb-1.0.0.dylib\" $n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libusb-0.1.4.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libusb-0.1.4.dylib\" $n\ninstall_name_tool -id \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/`basename $n`\" $n\ndone\n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libgphoto2.6.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libgphoto2.6.dylib\" \"$BUILT_PRODUCTS_DIR/freeshuttercounter.app/Contents/MacOS/freeshuttercounter\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -271,9 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C1592BF1C9EF52E00AFEDF3 /* freeshuttercounter.m in Sources */,
+				147F47A325686D85003EDA94 /* AppDelegate.swift in Sources */,
+				147F47BA2568749D003EDA94 /* MainController.swift in Sources */,
 				7C6480431CA1541200A592D0 /* main.m in Sources */,
-				7C1592821C9EC97500AFEDF3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,14 +348,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -360,14 +402,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -387,6 +438,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};
@@ -394,27 +446,34 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
 				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-					"$(PROJECT_DIR)",
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/GPhoto2.framework/prefix/include";
 				INFOPLIST_FILE = freeshuttercounter/Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 2.0.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = orlv.freeshuttercounter;
 				PRODUCT_NAME = freeshuttercounter;
 				SDKROOT = macosx;
 				SEPARATE_STRIP = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "freeshuttercounter/freeshuttercounter-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
@@ -423,27 +482,33 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
 				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-					"$(PROJECT_DIR)",
+					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/GPhoto2.framework/prefix/include";
 				INFOPLIST_FILE = freeshuttercounter/Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 2.0.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = orlv.freeshuttercounter;
 				PRODUCT_NAME = freeshuttercounter;
 				SDKROOT = macosx;
 				SEPARATE_STRIP = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "freeshuttercounter/freeshuttercounter-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_VERSION = 5.0;
 				VALID_ARCHS = x86_64;
 			};
 			name = Release;
@@ -451,6 +516,7 @@
 		7C1592AB1C9EC97600AFEDF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = freeshuttercounterTests/Info.plist;
@@ -464,6 +530,7 @@
 		7C1592AC1C9EC97600AFEDF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = freeshuttercounterTests/Info.plist;
@@ -477,6 +544,7 @@
 		7C1592AE1C9EC97600AFEDF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = freeshuttercounterUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -490,6 +558,7 @@
 		7C1592AF1C9EC97600AFEDF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = freeshuttercounterUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
