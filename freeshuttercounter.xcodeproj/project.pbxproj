@@ -50,7 +50,7 @@
 /* Begin PBXFileReference section */
 		147F47A225686D85003EDA94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		147F47B92568749D003EDA94 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
-		147F47C52568774A003EDA94 /* freeshuttercounter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "freeshuttercounter-Bridging-Header.h"; path = "Supporting Files/freeshuttercounter-Bridging-Header.h"; sourceTree = "<group>"; };
+		14FA6D5A256B970E00C68C86 /* freeshuttercounter-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "freeshuttercounter-Bridging-Header.h"; sourceTree = "<group>"; };
 		7C15927D1C9EC97500AFEDF3 /* freeshuttercounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = freeshuttercounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C1592891C9EC97500AFEDF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C15928E1C9EC97500AFEDF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 				147F47B225687272003EDA94 /* UI */,
 				147F47C22568760C003EDA94 /* Supporting Files */,
 				7C1592891C9EC97500AFEDF3 /* Assets.xcassets */,
-				147F47C52568774A003EDA94 /* freeshuttercounter-Bridging-Header.h */,
+				14FA6D5A256B970E00C68C86 /* freeshuttercounter-Bridging-Header.h */,
 				7C15928E1C9EC97500AFEDF3 /* Info.plist */,
 			);
 			path = freeshuttercounter;
@@ -454,9 +454,9 @@
 				DEPLOYMENT_POSTPROCESSING = YES;
 				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/GPhoto2.framework/prefix/include";
 				INFOPLIST_FILE = freeshuttercounter/Info.plist;
@@ -490,9 +490,9 @@
 				DEPLOYMENT_POSTPROCESSING = YES;
 				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-					"$(inherited)",
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/GPhoto2.framework/prefix/include";
 				INFOPLIST_FILE = freeshuttercounter/Info.plist;

@@ -9,7 +9,7 @@
 import Foundation
 import AppKit
 
-func camera_get_config(_ camera: Camera?, _ context: GPContext?, _ key: UnsafePointer<Int8>?) -> String? {
+func camera_get_config(_ camera: Camera?, _ context: GPcontext?, _ key: UnsafePointer<Int8>?) -> String? {
     var widget: CameraWidget? = nil
     var child: CameraWidget? = nil
     var type: CameraWidgetType
